@@ -32,7 +32,7 @@ app.use("/api/messages", messageRoutes);
 
 if (process.env.NODE_ENV === "production") {
   // Go up from backend/src to project root, then to frontend/dist
-  const frontendDistPath = path.join(__dirname, "..", "..", "..", "frontend", "dist");
+  const frontendDistPath = path.join(__dirname, "..", "..", "frontend", "dist");
   
   app.use(express.static(frontendDistPath));
 
