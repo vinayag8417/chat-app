@@ -13,6 +13,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5001;
 const __dirname = path.resolve();
+const isProduction = process.env.NODE_ENV === "production";
 
 app.use(express.json());
 app.use(cookieParser());
